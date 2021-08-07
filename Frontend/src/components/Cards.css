@@ -1,0 +1,36 @@
+@import url('https://fronts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --main-color:rgb(26, 82, 185);
+  --color-dark:#1D2231  ;
+  --text-grey:#8390A2;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-single{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-radius: 2px;
+  background: var(--main-color);
+  
+
+}
+
+.card-single div:first-child span{
+  color: var(--text-grey);
+  
+
+}
+.card-single div:last-child span{
+  color: var(--text-grey);
+  font-size: 2rem;
+  justify-content: space-between;
+
+}
