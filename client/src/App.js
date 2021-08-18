@@ -7,6 +7,10 @@ import { getPosts } from './actions/posts';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import useStyles from './styles';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 const App = () => {
     const classes = useStyles();
@@ -18,6 +22,11 @@ const App = () => {
 
 
     return (
+        <Router>
+      <Navbar />
+      <Switch>
+        
+      </Switch>
         <Container maxWidth="lg">
         <Grow in>
           <Container className="container">
@@ -32,6 +41,8 @@ const App = () => {
           </Container>
         </Grow>
       </Container>
+      <Footer/>
+      </Router>
     )
 }
 
