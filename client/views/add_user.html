@@ -27,41 +27,41 @@
     <main id="site-main">
         <div class="container">
             <div class="box-nav d-flex justify-between">
-                <a href="/"><i class="fas fa-angle-double-left"></i> All Added Books</a>
+                <a href="/"><i class="fas fa-angle-double-left"></i>  Registered patient  <i class="fas fa-address-book"></i></a>
             </div>
              <div class="form-title text-center">
-                 <h2 class="text-dark">New Book</h2>
-                 <span class="text-light">Use the below form to add a new Book</span>
+                 <h2 class="text-dark">Registration</h2>
+                 <span class="text-light">Use the below form to regisration</span>
              </div>
 
             <!-- form handling -->
-            <form  method="POST" id="add_book">
-               <div class="new_book">
+            <form  method="POST" id="add_patient">
+               <div class="new_patient">
                    <div class="form-group">
-                       <label for="name" class="text-light">ISBN Numbr</label>
+                       <label for="nic" class="text-light">ID Number</label>
                        <input type="hidden" name="id" value="">
-                        <input type="text" name="name" value="" placeholder="Enter the ISBN">
+                        <input type="text" name="name" value="" placeholder="Enter patient's NIC">
                     </div>
                     <div class="form-group">
-                        <label for="Title" class="text-light">Title</label>
-                        <input type="text" name="email" value="" placeholder="Enter the title of the book">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="text" name="email" value="" placeholder="Enter patient's Name">
                     </div>
                     <div class="form-group">
-                        <label for="Author" class="text-light">Author</label>
-                        <input type="text" name="email" value="" placeholder="Enter the name of the Author">
+                        <label for="Age" class="text-light">Age</label>
+                        <input type="text" name="email" value="" placeholder="Enter patient's Age">
                     </div>
             
                     
             
                     <div class="form-group">
-                        <label for="Type" class="text-light">Type</label>
+                        <label for="Type" class="text-light">Vaccine</label>
                         <div class="radio inline">
                             <input type="radio" id="radio-4" name="status" value="Active" >
-                            <label for="radio-4" class="radio-label">Sinhala</label>
+                            <label for="radio-4" class="radio-label">Pfizer</label>
                         </div>
                         <div class="radio inline">
                             <input type="radio" id="radio-5" name="status" value="Inactive" >
-                            <label for="radio-5" class="radio-label">English</label>
+                            <label for="radio-5" class="radio-label"> Sinopharm </label>
                         </div>
                     </div>
             
