@@ -14,21 +14,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
+   
 }
 
 .container{
     max-width: 1024px;
     margin: auto;
+    
+    
+    
 }
 
 .nav-brand{
     font-size: 1.5em;
     font-weight: bold;
+    
+    
 }
 
 .d-flex{
@@ -154,12 +161,12 @@ table{
     margin: auto;
 }
 
-#update_user .form-group,
+#update_patient .form-group,
 #add_patient .form-group{
     margin: .4em 0;
 }
 
-#update_user .form-group input[type="text"],
+#update_patient .form-group input[type="text"],
 #add_patient .form-group input[type="text"]{
     width: 100%;
     padding: .6em 1em;
@@ -170,7 +177,7 @@ table{
     border-radius: .2em;
 }
 
-#update_user .form-group .radio,
+#update_patient.form-group .radio,
 #add_patient .form-group .radio{
     margin: 1em 2em;
 }
@@ -215,7 +222,7 @@ table{
     background: #b4b4b4;
 }
 
-#update_user .form-group .btn,
+#update_patient .form-group .btn,
 #add_patient .form-group .btn{
     width: 100%;
     padding: .9em 1em;
@@ -228,8 +235,10 @@ table{
     margin: .5em 0;
 }
 
-#update_user .form-group .btn:hover,
+#update_patient .form-group .btn:hover,
 #add_patient .form-group .btn:hover{
     background-color: var(--dark);
     color: var(--border);
 }
+
+

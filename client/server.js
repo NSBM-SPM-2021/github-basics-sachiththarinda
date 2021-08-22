@@ -16,12 +16,20 @@ app.use(bodyparser.urlencoded({ extended : true}))
 
 app.set("view engine", "ejs")
 
-app.use('/css', express.static(path.resolve(__dirname, "assets/css")))
-app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
-app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
+app.use('/css', express.static(path.resolve(__dirname, "assests/css")))
+app.use('/img', express.static(path.resolve(__dirname, "assests/img")))
+app.use('/js', express.static(path.resolve(__dirname, "assests/js")))
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
    res.render('index');
 })
 
+
+app.get('/add-user', (req, res) => {
+   res.render('add_user');
+})
+
+app.get('/update-patient', (req, res) => {
+   res.render('update_user');
+})
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
