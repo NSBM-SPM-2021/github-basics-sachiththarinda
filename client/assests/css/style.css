@@ -20,14 +20,13 @@
 a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
+    
    
 }
 
 .container{
     max-width: 1024px;
-    margin: auto;
-    
-    
+    margin: auto;  
     
 }
 
@@ -84,6 +83,7 @@ a {
 #site-main{
     margin-top: 6em;
     font-family: 'Barlow', sans-serif;
+    
 }
 
 #site-main .container .box-nav > a{
@@ -147,7 +147,7 @@ table{
 
 }
 
-/*  add user & update user template */
+/*  add patient & update patient template */
 .form-title{
     margin-top: 2em;
 }
@@ -164,6 +164,7 @@ table{
 #update_patient .form-group,
 #add_patient .form-group{
     margin: .4em 0;
+    
 }
 
 #update_patient .form-group input[type="text"],
