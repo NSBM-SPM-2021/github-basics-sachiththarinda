@@ -1,9 +1,11 @@
+<% for(var i = 0; i < patients.length; i++) { %>
+
 <tr>
-    <td>1</td>
-    <td>981602567V</td>
-    <td>Sachith Tharinda</td>
-    <td>23</td>
-    <td>Pfizer</td>
+    <td><%= i + 1 %></td>
+    <td><%= patients[i].nic %></td>
+    <td><%= patients[i].name %></td>
+    <td><%= patients[i].age %></td>
+    <td><%= patients[i].type %></td>
     <td>
         <a href="/update-patient" class="btn border-shadow update">
             <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
@@ -13,3 +15,5 @@
         </a>
     </td>
 </tr>
+
+<% } %>
