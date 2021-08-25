@@ -24,11 +24,7 @@ a {
    
 }
 
-.container{
-    max-width: 1024px;
-    margin: auto;  
-    
-}
+
 
 .nav-brand{
     font-size: 1.5em;
@@ -244,3 +240,12 @@ table{
 }
 
 
+footer {
+  
+    color: #0a4649;
+    padding: 25px;
+    padding-top: 5%;
+  }
+  .socialmedia{
+      font-size: 2rem;
+  }
