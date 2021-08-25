@@ -18,5 +18,11 @@ exports.add_patient =(req,res)=>{
 }
 
 exports.update_patient =(req,res)=>{
-    res.render('update_patient');
+    axios.get('http://localhost:3000/api/patients',{params:{id:req.query.id}})
+    .then(function(patientsdata){
+        res.render('update_patient',{patients:patientsdata.data})
+    })
+    .catch(err=>{
+        res.send(err);
+    })
 }
