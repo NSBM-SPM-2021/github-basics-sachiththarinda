@@ -12,13 +12,13 @@ const patient = new patientsdb({
     nic:req.body.nic,
     name:req.body.name,
     age:req.body.age,
-    vaccine:req.body.vaccine
+    vaccine:req.body.status
 })
 
 patient
   .save(patient)
   .then(data=>{
-      res.send(data)
+      res.redirect("/add-user")
   })
   .catch(err=>{
       res.status(500).send({

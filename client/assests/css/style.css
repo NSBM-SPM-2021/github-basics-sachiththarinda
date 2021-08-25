@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 
 :root{
-    --dark: #2b2d42;
-    --light: #adb5bd;
-    --border: #dee2e6;
+    --dark: #0a4649;
+    --light: #0c68c4;
+    --border: #0a121a;
     --border-btn: #edf2f4;
 }
 
@@ -114,7 +114,7 @@ table{
 }
 
 .table tr:hover{
-    background-color:#06d6a0 ;
+    background-color:#48c9ba ;
 }
 
 .table tr:hover td > a{
@@ -150,6 +150,7 @@ table{
 /*  add patient & update patient template */
 .form-title{
     margin-top: 2em;
+    
 }
 
 .form-title > h2{
@@ -208,13 +209,13 @@ table{
 }
 
 .radio input[type='radio']:checked + .radio-label:before{
-    background-color: #16db93;
+    background-color: #48c9ba;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type='radio']:focus + .radio-label:before{
     outline: none;
-    border-color:#16db93;
+    border-color:#48c9ba;
 }
 
 .radio input[type='radio']:disabled + .radio-label:before{
@@ -227,7 +228,7 @@ table{
 #add_patient .form-group .btn{
     width: 100%;
     padding: .9em 1em;
-    background-color:#16db93; 
+    background-color:#48c9ba; 
     border: none;
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
